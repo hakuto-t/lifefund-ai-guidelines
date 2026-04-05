@@ -756,7 +756,7 @@
 <!-- Header -->
 <header class="site-header">
   <div class="header-inner">
-    <div class="header-logo"><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="display:flex;align-items:center;"><img src="_ロゴ_ヘッダー.png" alt="LIFEFUND"></a></div>
+    <div class="header-logo"><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;" style="display:flex;align-items:center;"><img src="logo_header.png" alt="LIFEFUND"></a></div>
     <nav class="header-nav">
       <a href="#intro">はじめに</a>
       <a href="#definitions">用語の定義</a>
@@ -773,7 +773,7 @@
 <!-- Hero -->
 <section class="hero">
   <div class="hero-content">
-    <div class="hero-logo"><img src="_ロゴ_ヒーロー.png" alt="LIFEFUND"></div>
+    <div class="hero-logo"><img src="logo_hero.png" alt="LIFEFUND"></div>
     <div class="hero-badge">CORPORATE POLICY</div>
     <h1>株式会社LIFEFUND<br>AIガイドライン</h1>
     <div class="hero-version">第1.2版</div>
@@ -1130,7 +1130,7 @@
             <tr><td>Loom</td><td>Loom</td><td>動画メッセージ・AI要約</td></tr>
             <tr><td>tl;dv</td><td>tl;dv</td><td>会議録画・AI議事録</td></tr>
             <tr><td>PLAUD Web</td><td>PLAUD</td><td>AI議事録</td></tr>
-            <tr><td>Notta <span style="color:#8b7355;font-size:.85em;">※</span></td><td>Notta</td><td>AI文字起こし・議事録</td></tr>
+            <tr><td>Notta</td><td>Notta</td><td>AI議事録</td></tr>
             <tr><td>GenSpark</td><td>GenSpark</td><td>AI検索</td></tr>
             <tr><td>Manus</td><td>Manus</td><td>AIエージェント</td></tr>
             <tr><td>Zapier</td><td>Zapier</td><td>自動化ワークフロー</td></tr>
@@ -1142,16 +1142,6 @@
             <tr><td>Freepik AI</td><td>Freepik</td><td>画像生成</td></tr>
           </tbody>
         </table>
-      </div>
-
-      <div class="note" style="margin-bottom:.8em;border-left-color:#8b7355;">
-        <strong>※ Notta（全社導入ツール）</strong><br>
-        2026年3月10日より全社導入。商談録音データの文字起こし→NotebookLMへの蓄積による案件管理に活用しています。<br>
-        運用ルールの詳細は以下のドキュメントを参照してください。
-        <ul style="margin:.4em 0 0 1.2em;list-style:disc;">
-          <li><a href="https://docs.google.com/presentation/d/11mlyhsQvpM1xoH64AoC8kgjioucB3eS-/edit?usp=sharing&ouid=111679227039574545248&rtpof=true&sd=true" target="_blank" rel="noopener">Notta運用説明スライド（研修資料）</a></li>
-          <li><a href="https://docs.google.com/document/d/1kB1b4NInf6u0AG_--uPvlG4o8-hGQEdH/edit?usp=sharing&ouid=111679227039574545248&rtpof=true&sd=true" target="_blank" rel="noopener">Notta運用マニュアル</a></li>
-        </ul>
       </div>
 
       <div class="note">上記以外の有償AIツールを業務利用する場合は、1-2「<a href="#ai-tool-application">AIツール利用申請</a>」により申請すること。無償ツールは申請不要です</div>
@@ -1439,49 +1429,6 @@
 
     <div class="section-divider"></div>
 
-    <!-- Claude Code ベストプラクティス バナー -->
-    <section class="section">
-      <a href="Claude_Code_ベストプラクティス設計書.html" style="
-        display: block; text-decoration: none; color: #fff;
-        background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 60%, #8b7355 100%);
-        border-radius: 12px; padding: 32px 36px;
-        box-shadow: 0 4px 16px rgba(26,26,46,.2);
-        transition: transform .2s, box-shadow .2s;
-        position: relative; overflow: hidden;
-      " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(26,26,46,.3)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(26,26,46,.2)'">
-        <div style="position:absolute;top:0;right:0;bottom:0;left:0;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(255,255,255,.02) 20px,rgba(255,255,255,.02) 40px);"></div>
-        <div style="position:relative;z-index:1;">
-          <div style="font-size:.7rem;font-weight:700;letter-spacing:.15em;color:#a8956f;margin-bottom:6px;">BEST PRACTICES GUIDE</div>
-          <div style="font-family:'Noto Serif JP',serif;font-size:1.35rem;font-weight:700;margin-bottom:8px;">Claude Code ベストプラクティス基本設計書</div>
-          <div style="font-size:.88rem;opacity:.8;line-height:1.6;">Anthropic公式ドキュメント準拠。CLAUDE.md・フォルダ構造・コンテキスト管理の設計指針とテンプレート。</div>
-          <div style="margin-top:16px;display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:600;color:#a8956f;letter-spacing:.04em;">設計書を開く <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
-        </div>
-      </a>
-      <div style="height:16px;"></div>
-      <a href="Claude_Code_環境セットアップ.md" download style="
-        display: block; text-decoration: none; color: #fff;
-        background: linear-gradient(135deg, #059669 0%, #0f766e 60%, #0d9488 100%);
-        border-radius: 12px; padding: 28px 36px;
-        box-shadow: 0 4px 16px rgba(5,150,105,.2);
-        transition: transform .2s, box-shadow .2s;
-        position: relative; overflow: hidden;
-      " onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 24px rgba(5,150,105,.3)'" onmouseout="this.style.transform='';this.style.boxShadow='0 4px 16px rgba(5,150,105,.2)'">
-        <div style="position:absolute;top:0;right:0;bottom:0;left:0;background:repeating-linear-gradient(45deg,transparent,transparent 20px,rgba(255,255,255,.03) 20px,rgba(255,255,255,.03) 40px);"></div>
-        <div style="position:relative;z-index:1;display:flex;align-items:center;gap:24px;">
-          <div style="background:rgba(255,255,255,.15);border-radius:12px;padding:14px;display:flex;align-items:center;justify-content:center;">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-          </div>
-          <div>
-            <div style="font-size:.7rem;font-weight:700;letter-spacing:.15em;color:rgba(255,255,255,.7);margin-bottom:4px;">AUTO SETUP PROMPT</div>
-            <div style="font-size:1.15rem;font-weight:700;margin-bottom:4px;">環境セットアップファイル</div>
-            <div style="font-size:.82rem;opacity:.8;line-height:1.5;">ダウンロードしてClaude Codeに渡すだけ。ベストプラクティスに基づいた作業環境が自動構築されます。</div>
-          </div>
-        </div>
-      </a>
-    </section>
-
-    <div class="section-divider"></div>
-
     <!-- 参考資料 -->
     <section class="section" id="references">
       <span class="section-number">REFERENCES</span>
@@ -1499,7 +1446,7 @@
 
 <!-- Footer -->
 <footer class="site-footer">
-  <div class="footer-logo"><img src="_ロゴ_フッター.png" alt="LIFEFUND"></div>
+  <div class="footer-logo"><img src="logo_footer.png" alt="LIFEFUND"></div>
   <div class="footer-company">株式会社LIFEFUND</div>
   <div class="footer-name">代表取締役社長 白都 卓磨</div>
   <p>&copy; 2026 LIFEFUND Inc. All rights reserved.</p>
